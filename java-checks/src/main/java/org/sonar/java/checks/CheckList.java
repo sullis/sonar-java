@@ -43,6 +43,11 @@ import org.sonar.java.checks.naming.KeywordAsIdentifierCheck;
 import org.sonar.java.checks.naming.MethodNameSameAsClassCheck;
 import org.sonar.java.checks.naming.MethodNamedEqualsCheck;
 import org.sonar.java.checks.naming.MethodNamedHashcodeOrEqualCheck;
+import org.sonar.java.checks.regex.AnchorPrecedenceCheck;
+import org.sonar.java.checks.regex.DuplicatesInCharacterClassCheck;
+import org.sonar.java.checks.regex.InvalidRegexCheck;
+import org.sonar.java.checks.regex.RedosCheck;
+import org.sonar.java.checks.regex.UnicodeCaseCheck;
 import org.sonar.java.checks.security.AESAlgorithmCheck;
 import org.sonar.java.checks.security.AndroidBroadcastingCheck;
 import org.sonar.java.checks.security.AndroidExternalStorageCheck;
@@ -213,6 +218,7 @@ public final class CheckList {
       AccessibilityChangeCheck.class,
       AESAlgorithmCheck.class,
       AllBranchesAreIdenticalCheck.class,
+      AnchorPrecedenceCheck.class,
       AndroidBroadcastingCheck.class,
       AndroidExternalStorageCheck.class,
       AndroidSSLConnectionCheck.class,
@@ -343,6 +349,7 @@ public final class CheckList {
       DoublePrefixOperatorCheck.class,
       DuplicateArgumentCheck.class,
       DuplicateConditionIfElseIfCheck.class,
+      DuplicatesInCharacterClassCheck.class,
       DynamicClassLoadCheck.class,
       EmailHotspotCheck.class,
       EmptyBlockCheck.class,
@@ -555,6 +562,8 @@ public final class CheckList {
       RedundantTypeCastCheck.class,
       ReflectionOnNonRuntimeAnnotationCheck.class,
       RegexHotspotCheck.class,
+      InvalidRegexCheck.class,
+      RedosCheck.class,
       RegexPatternsNeedlesslyCheck.class,
       RepeatAnnotationCheck.class,
       ReplaceGuavaWithJava8Check.class,
@@ -690,6 +699,7 @@ public final class CheckList {
       UnderscoreMisplacedOnNumberCheck.class,
       UnderscoreOnNumberCheck.class,
       UndocumentedApiCheck.class,
+      UnicodeCaseCheck.class,
       UnnecessarySemicolonCheck.class,
       UnreachableCatchCheck.class,
       UnusedLabelCheck.class,
